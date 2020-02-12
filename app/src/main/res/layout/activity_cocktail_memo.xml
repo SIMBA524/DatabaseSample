@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_Cacktail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.6"
+        android:entries="@array/lv_cocktaillist"/>
+<!--    カクテルリストを表示するListView・13行目→余り余白のうち60％をこの画面部品に割り当てる設定-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_lb_name"
+        android:textSize="20sp"/>
+<!--    「選択されたカクテル：」というラベルを表示するTextView-->
+
+    <TextView
+        android:id="@+id/tvCocktailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_name"
+        android:textSize="20sp"/>
+<!--    選択されたカクテル名を表示するTextView-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/tv_lb_note"
+        android:textSize="20sp"/>
+<!--    「感想：」というラベルを表示するTextView-->
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_gravity="top"
+        android:inputType="textMultiLine"/>
+<!--感想を入力するEditText・44行目→残り余白のうち40％をこの画面部品に割り当てる設定
+45行目→上揃えに設定・46行目→複数行入力できるように設定-->
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:onClick="onSaveButtonClick"
+        android:text="@string/btn_save"/>
+
+</LinearLayout>
