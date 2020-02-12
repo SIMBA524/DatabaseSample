@@ -34,7 +34,7 @@ public class CocktailMemoActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_cocktail_memo );
 
-        //カクテル名を表示するTextViewを取得
+        //カクテル名を表示するTextViewを取得 
         _tvCocktailName = findViewById(R.id.tvCocktailName);
         //[保存]ボタンを取得
         _btnSave = findViewById(R.id.btnSave);
